@@ -11,6 +11,11 @@ compile:
      - 'ls -l ~/'
      - 'aws --version'
     # - 'ls -l ~/.aws/'
+deployment:
+  dev:
+    branch: dev
+    deploycommands:
+       - echo 'hello deploy'
 test:
   override:
      - python nosetest.py
