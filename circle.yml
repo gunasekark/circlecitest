@@ -14,7 +14,7 @@ compile:
 deployment:
   dev:
     branch: dev
-    deploycommands:
+    commands:
        - echo 'hello deploy'
 test:
   override:
