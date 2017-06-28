@@ -5,6 +5,17 @@ compile:
   override:
      - echo 'hello world'
      - echo $ABC
+     - |
+        CDE=${ABC}
+        echo $CDE
+     - 'ls -l ~/'
+     - 'aws --version'
+    # - 'ls -l ~/.aws/'
+deployment:
+  dev:
+    branch: dev
+    commands:
+       - echo 'hello deploy'
 test:
   override:
      - python nosetest.py
