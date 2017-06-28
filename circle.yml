@@ -21,6 +21,7 @@ deployment:
        - |
           export AWS_ACCESS_KEY_ID=${DEV_AWS_KEY}
           export AWS_SECRET_ACCESS_KEY=${DEV_AWS_SECRET}
+          export AWS_DEFAULT_REGION='ap-south-1'
           echo $AWS_ACCESS_KEY_ID
           echo $AWS_SECRET_ACCESS_KEY
           aws --debug s3 sync ~/circlecitest/dist s3://s3awscddev1 --delete
