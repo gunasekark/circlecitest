@@ -8,6 +8,8 @@ compile:
      - |
         CDE=${ABC}
         echo $CDE
+     - FGH=${ABC}
+     - echo $FGH
      - 'ls -l ~/'
      - 'aws --version'
     # - 'ls -l ~/.aws/'
