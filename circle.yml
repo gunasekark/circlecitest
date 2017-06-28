@@ -16,6 +16,7 @@ deployment:
     branch: dev
     commands:
        - echo 'hello deploy'
+       - aws s3 sync ~/circlecitest/dist s3://s3awscddev1 --delete
 test:
   override:
      - python nosetest.py
