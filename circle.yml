@@ -21,6 +21,8 @@ deployment:
        - |
           AWS_ACCESS_KEY_ID=${DEV_AWS_KEY}
           AWS_SECRET_ACCESS_KEY=${DEV_AWS_SECRET}
+          echo $AWS_ACCESS_KEY_ID
+          echo $AWS_SECRET_ACCESS_KEY
           aws s3 sync ~/circlecitest/dist s3://s3awscddev1 --delete
 test:
   override:
