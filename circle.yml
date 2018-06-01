@@ -5,6 +5,7 @@ compile:
   override:
      - echo 'hello world'
      - echo $ABC
+     - echo $CIRCLE_BRANCH
 test:
   override:
      - python nosetest.py
